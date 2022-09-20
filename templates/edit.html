@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EDIT DETAILS</title>
+</head>
+
+<body>
+    <h1>WELCOME TO EDIT DETAILS </h1>
+
+    
+
+    
+    <div align="center">
+       
+        <form action="/updating" method="post">
+            <!-- <tr>
+                <input type="number" name="id" placeholder="ID"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required>
+            </tr> <br> -->
+            <tr>
+                <input type="text" name="name" placeholder="name" value="{{listdata[0]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem;  margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                
+                <input type="email" name="email" placeholder="email" value="{{listdata[1]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                <input type="number" name="contact" placeholder="contact" value="{{listdata[2]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br>
+
+            </tr>
+            
+            <input type="text" name="objective" placeholder="objectives" value="{{listdata[3]}}"
+                style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                required> <br>
+            </tr>
+
+            <tr>
+                <input type="text" name="Board10" placeholder="Board10" value="{{listdata[4]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="school10" placeholder="school10" value="{{listdata[5]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="marks10" placeholder="marks10" value="{{listdata[6]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="number" name="passingyear10" placeholder="passingyear10" value="{{listdata[7]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="Board12" placeholder="Board12" value="{{listdata[8]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="school12" placeholder="school12" value="{{listdata[9]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+
+            <tr>
+                <input type="number" name="marks12" placeholder="marks12" value="{{listdata[10]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="stream12" placeholder="stream12" value="{{listdata[11]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="passingyear12" placeholder="passingyear12" value="{{listdata[12]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="graduations" placeholder="graduations" value="{{listdata[13]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="cgpa" placeholder="cgpa" value="{{listdata[14]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="graduationcoll" placeholder="graduationcoll" value="{{listdata[15]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="graduationpassingyear" placeholder="graduationpy" value="{{listdata[16]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="masters" placeholder="masters" value="{{listdata[17]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="mscgpa" placeholder="mscgpa" value="{{listdata[18]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="mastercoll" placeholder="mastercoll" value="{{listdata[19]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="masterpassingyear" placeholder="masterpy" value="{{listdata[20]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="project" placeholder="project" value="{{listdata[21]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="skills" placeholder="skills" value="{{listdata[22]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="date" name="dob" placeholder="dob" value="{{listdata[23]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="address" placeholder="address" value="{{listdata[24]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="language" placeholder="language" value="{{listdata[25]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="url" name="link" placeholder="link" value="{{listdata[26]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+    
+            <center>
+                <input type="submit" value="submit"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+
+                <input type="reset" value="reset"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem;  margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+            </center>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
+
+
+    
+    <!-- <div align="center">
+       
+        <form action="/updating" method="post">
+            <tr>
+                <input type="number" name="name"  value="{{listdata[0]}}" placeholder="ID" 
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required>
+            </tr> <br>
+            <tr>
+                <input type="text" name="name" value="{{listdata[1]}}" placeholder="name" 
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem;  margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                
+                <input type="email" name="email" placeholder="email" value="{{listdata[2]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br><br>
+
+            </tr>
+            <tr>
+                <input type="number" name="contact" placeholder="contact" value="{{listdata[3]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-bottom: 1rem;" required><br>
+
+            </tr>
+            
+            <input type="text" name="objective" placeholder="objectives" value="{{listdata[4]}}"
+                style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                required> <br>
+            </tr>
+
+            <tr>
+                <input type="text" name="Board10" placeholder="Board10" value="{{listdata[5]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="school10" placeholder="school10" value="{{listdata[6]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="marks10" placeholder="marks10" value="{{listdata[7]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="number" name="passingyear10" placeholder="passingyear10" value="{{listdata[8]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="Board12" placeholder="Board12" value="{{listdata[9]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="school12" placeholder="school12" value="{{listdata[10]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+
+            <tr>
+                <input type="number" name="marks12" placeholder="marks12" value="{{listdata[11]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="stream12" placeholder="stream12" value="{{listdata[12]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="passingyear12" placeholder="passingyear12" value="{{listdata[13]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="graduations" placeholder="graduations" value="{{listdata[14]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="cgpa" placeholder="cgpa" value="{{listdata[15]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="graduationcoll" placeholder="graduationcoll" value="{{listdata[16]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="number" name="graduationpassingyear" placeholder="graduationpy" value="{{listdata[17]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="masters" placeholder="masters" value="{{listdata[18]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="mscgpa" placeholder="mscgpa" value="{{listdata[19]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="mastercoll" placeholder="mastercoll" value="{{listdata[20]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+            <tr>
+                <input type="text" name="masterpassingyear" placeholder="masterpy" value="{{listdata[21]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="project" placeholder="project" value="{{listdata[22]}}"
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="skills" placeholder="skills" value="{{listdata[23]}}"
+
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="date" name="dob" placeholder="dob" value="{{listdata[24]}}"
+
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="address" placeholder="address" value="{{listdata[25]}}"
+
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="text" name="language" placeholder="language" value="{{listdata[26]}}"
+
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+            <tr>
+                <input type="url" name="link" placeholder="link" value="{{listdata[27]}}"
+
+                    style="width: 14rem; border-radius: 0.2rem; height: 1.7rem; margin-top: 2rem; margin-bottom: 1rem;"
+                    required>
+
+            </tr>
+            <br>
+
+    
+            <center>
+                <input type="submit" value="submit"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem; margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+
+                <input type="reset" value="reset"
+                    style="border: none; width: 8rem; border-radius: 0.2rem;  height: 2rem;  margin-top: 1rem; color: rgb(255, 255, 255); background-color:rgb(255, 165, 55);">
+            </center>
+
+        </form>
+    </div>
+    
+</body>
+
+</html> -->
